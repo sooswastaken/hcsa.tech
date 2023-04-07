@@ -9,8 +9,8 @@ import PublicIcon from './assets/public.svg';
 import InvisibleIcon from './assets/invisible.svg';
 
 import DiscordIcon from './assets/discord.svg';
-import GithubIcon from './assets/github.svg';
-import FigmaIcon from './assets/figma.svg';
+import GithubIcon from './assets/github.png';
+import FigmaIcon from './assets/figma.png';
 
 import { useState } from 'react';
 

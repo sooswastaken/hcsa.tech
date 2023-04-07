@@ -95,6 +95,7 @@ const App = () => {
 								/>
 							}
 						/>
+						<Route path="/dashboard" element={<DashboardPage />} />
 						<Route path="/sessions" element={<SessionManager />} />
 						<Route path="*" element={<NotFound404 />} />
 					</Routes>
