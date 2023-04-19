@@ -190,7 +190,6 @@ async def setup(app_, _):
 @app.listener("after_server_stop")
 async def teardown(app_, _):
     await app_.ctx.aiohttp_session.close()
-    await app_.ctx.session_manager.disconnect()
 
 
 @app.route("/login")

@@ -1,0 +1,251 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 90px;
+  background-color: #303030;
+
+  h1 {
+    // make font bolder & bigger
+    font-weight: 600;
+    font-size: 2vw;
+  }
+
+  // logout button, it has a img inside
+  button {
+    display: flex;
+    align-items: center;
+    background-color: #FB4646;
+    border: none;
+    cursor: pointer;
+    // padding in em
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    // make font bolder & bigger
+    font-weight: 600;
+    font-size: 1em;
+    margin-right: 1em;
+
+    img {
+      margin-right: 5px;
+      // make image smaller
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  .profile-editor {
+    display: flex;
+
+    .profile-picture-container {
+      p {
+        color: #c2c2c2;
+        // use vw for font-size and margin-bottom
+        font-size: 1.3vw;
+        margin-bottom: 0.5em;
+        font-weight: 600;
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      height: 26em;
+
+      margin-left: 3em;
+      margin-top: 2.5em;
+      margin-right: 2em;
+
+      background-color: #272727;
+      border-radius: 10px;
+
+      // target alt "Profile"
+      img[alt="Profile"] {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        border: 14px solid #222222;
+      }
+
+      button {
+        background-color: #505050;
+        border: none;
+        cursor: pointer;
+        // padding in em
+        padding: 0.5em 2em;
+        border-radius: 5px;
+        // make font bolder & bigger
+        font-size: 1em;
+        margin-top: 1em;
+
+        // center img & text vertically
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          margin-right: 10px;
+          // make image smaller
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+    }
+
+    .profile-settings {
+      margin: 2em 3em;
+      width: 68%;
+      display: flex;
+      flex-direction: column;
+
+      .profile-visibility {
+        border-radius: 0.2em;
+        background-color: #404040;
+        width: 100%;
+
+        .options {
+          width: 80%;
+          margin: auto;
+          display: flex;
+          padding: 10px;
+          justify-content: space-between;
+          color: white;
+
+          .public, .private, .invisible {
+            cursor: pointer;
+            background-color: #535353;
+            padding: 0.8em 1.4em;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+              background: #777777;
+              cursor: pointer;
+            }
+
+            img {
+              margin-right: 5px;
+              width: 1.4em;
+              height: 1.4em;
+            }
+
+            width: 14em !important;
+          }
+
+          .public.selected, .private.selected, .invisible.selected {
+            background-color: #777777;
+          }
+
+
+          // .public {
+          //     background-color: #535353;
+          //     padding: 1em;
+          // }
+          // .private {
+          //     background-color: #535353;
+          //     padding: 1em;
+          // }
+          // .invisible {
+          //     background-color: #535353;
+          //     padding: 1em;
+          // }
+        }
+
+        .selector {
+          width: 12em;
+          height: 0.3em;
+          border-radius: 1em 1em 0em 0em;
+          background-color: white;
+        }
+      }
+
+      .header {
+        color: #c2c2c2;
+        margin-bottom: 0.7em;
+        // ignore first element
+        margin-top: 0.7em;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+      }
+
+      .profile-link {
+        // align items vertically
+        display: flex;
+        align-items: center;
+
+        p {
+          // center text vertically
+          display: flex;
+          align-items: center;
+          // p houses the span, make span and input same size
+          background-color: #535353;
+          // padding in em
+          padding: 0em 1em;
+          // border-radius on top left and bottom left only
+          border-radius: 5px 0 0 5px;
+
+          margin: 0;
+          height: 2.5em;
+          color: rgb(201, 201, 201)
+        }
+
+        input {
+          all: unset;
+          // center text vertically
+          display: flex;
+          align-items: center;
+
+          background-color: #333333;
+          // make same size as span
+          padding: 0em 1em;
+          border: none;
+          margin: 0;
+          height: 2.5em;
+          // border-radius on top right and bottom right only
+          border-radius: 0 5px 5px 0;
+
+        }
+        .copy {
+          background-color: #53535300;
+          border: none;
+          // place on right side, 1em from right of the input box
+          margin-left: 0.9em;
+          margin-top: 0.01em;
+          // center text vertically
+        }
+      }
+
+      .about {
+        textarea {
+          all: unset;
+          background-color: #333333;
+          // padding in em
+          padding: 0.5em 1em;
+          border: none;
+          margin: 0;
+          height: 10em;
+          width: 100%;
+          border-radius: 5px;
+          color: rgb(201, 201, 201)
+        }
+      }
+
+
+    }
+  }
+}

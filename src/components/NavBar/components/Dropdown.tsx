@@ -25,7 +25,8 @@ const Dropdown = ({ setUserData, dropDownRef, profileRef }: any) => {
 				<li
 					className="userMenuListItem"
 					onClick={() => {
-						alert('Not implemented yet');
+						// navigate to dashboard which is /dashboard
+						navigate('/dashboard');
 					}}
 				>
 					Dashboard
